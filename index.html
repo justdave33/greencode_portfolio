@@ -168,8 +168,16 @@
       opacity: 0.15;
       animation: floatOrb 8s ease-in-out infinite;
     }
-    .orb1 { width: 500px; height: 500px; background: var(--green); top: -100px; right: -100px; }
-    .orb2 { width: 300px; height: 300px; background: var(--cyan); bottom: 0; left: 20%; animation-delay: -3s; opacity: 0.08; }
+    .orb1 {
+      width: 500px; height: 500px; background: var(--green); top: -100px; right: -180px;
+      -webkit-mask-image: radial-gradient(circle, black 55%, transparent 78%);
+      mask-image: radial-gradient(circle, black 55%, transparent 78%);
+    }
+    .orb2 {
+      width: 300px; height: 300px; background: var(--cyan); bottom: 0; left: 20%; animation-delay: -3s; opacity: 0.08;
+      -webkit-mask-image: radial-gradient(circle, black 55%, transparent 78%);
+      mask-image: radial-gradient(circle, black 55%, transparent 78%);
+    }
     @keyframes floatOrb {
       0%, 100% { transform: translate(0,0) scale(1); }
       50% { transform: translate(20px, -30px) scale(1.05); }
