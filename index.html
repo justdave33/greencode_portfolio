@@ -1679,7 +1679,7 @@
     for (let i = 0; i < 15; i++) {
       const p = document.createElement('div');
       p.className = 'particle';
-      p.style.left = Math.random() * 100 + 'vw';
+      p.style.left = Math.random() * (window.innerWidth || document.documentElement.clientWidth) + 'px';
       p.style.animationDuration = (15 + Math.random() * 20) + 's';
       p.style.animationDelay = (Math.random() * 20) + 's';
       p.style.width = p.style.height = (1 + Math.random() * 2) + 'px';
